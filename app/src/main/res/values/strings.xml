@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Anime X Stream</string>
+    <string name="app_name">AniStream</string>
     <string name="discover">Browse</string>
     <string name="retry">retry</string>
     <string name="quality_auto" translatable="false">Auto</string>

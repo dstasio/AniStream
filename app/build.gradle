@@ -7,16 +7,14 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'realm-android'
 apply plugin: "androidx.navigation.safeargs.kotlin"
-apply plugin: 'com.google.gms.google-services'
-apply plugin: 'com.google.firebase.crashlytics'
 
 android {
 
 //    signingConfigs {
 //        release {
-//            storeFile file('E:\\Projects\\animexstream.jks')
+//            storeFile file('E:\\Projects\\anistream.jks')
 //            storePassword 'labrador1'
-//            keyAlias = 'xblacky'
+//            keyAlias = 'davesan'
 //            keyPassword 'labrador1'
 //        }
 //    }
@@ -30,13 +28,13 @@ android {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
     defaultConfig {
-        applicationId "net.xblacky.animexstream"
+        applicationId "net.davesan.anistream"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 8
         versionName "0.2.4"
         vectorDrawables.useSupportLibrary = true
-        archivesBaseName = "AnimexStream-v$versionName"
+        archivesBaseName = "AniStream-v$versionName"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -127,11 +125,4 @@ dependencies {
     def nav_version = "2.3.0"
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
-
-    //Firebase Analytics & Crashlytics
-    implementation 'com.google.firebase:firebase-analytics:17.5.0'
-    implementation 'com.google.firebase:firebase-crashlytics:17.2.1'
-    implementation 'com.google.firebase:firebase-messaging:20.2.4'
-    implementation 'com.google.firebase:firebase-database-ktx:19.3.1'
-    implementation 'com.google.firebase:firebase-config:19.2.0'
 }
